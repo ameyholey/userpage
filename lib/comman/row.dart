@@ -9,21 +9,20 @@ class Arow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Center(
-        child: Row(
-          children: [
-            Cardvertical(),
-            SizedBox(
-              width: Sizes.md,
-            ),
-            Cardvertical(),
-            SizedBox(
-              width: Sizes.md,
-            ),
-            Cardvertical(),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Cardvertical(),
+          SizedBox(
+            width: Sizes.md,
+          ),
+          Cardvertical(),
+          SizedBox(
+            width: Sizes.md,
+          ),
+          Cardvertical(),
 
-          ],
-        ),
+        ],
       ),
     );
   }

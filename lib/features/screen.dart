@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:userpage/comman/row.dart';
 
+import '../comman/buttons.dart';
 import '../comman/card.dart';
 import '../comman/greencontainer.dart';
+import '../comman/imageslider.dart';
 import '../comman/sizes.dart';
 import '../comman/slider.dart';
 import '../containers/circularimage.dart';
@@ -32,15 +34,7 @@ class Screen extends StatelessWidget {
             SizedBox(
               height: Sizes.md,
             ),
-            SizedBox(
-              height: 20,
-              child: Row(
-                children: [
-                  ElevatedButton(
-                      onPressed: () {}, child: Text('Recently Used')),
-                ],
-              ),
-            ),
+            Buttons(),
             SizedBox(
               height: Sizes.md,
             ),
@@ -49,9 +43,14 @@ class Screen extends StatelessWidget {
               height: Sizes.md,
             ),
             Arow(),
+            SizedBox(
+              height: Sizes.md,
+            ),
+            APromoSlider(),
           ],
         ),
       ),
     );
   }
 }
+

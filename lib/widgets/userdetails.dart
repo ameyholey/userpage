@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-
 import '../comman/sizes.dart';
+
 class Usre extends StatelessWidget {
   const Usre({
     super.key,
@@ -10,30 +10,36 @@ class Usre extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(10),
-      child: SizedBox(
-        height: 100,
+    return SizedBox(
+      height: 100,
+      child: Padding(
+        padding: const EdgeInsets.all(10),
         child: Row(
           children: [
             Column(
               children: [
-                Text('Hi Prashant'),
-                SizedBox(height: Sizes.xs,),
+                Text('Hi Prashant', style: TextStyle(fontWeight: FontWeight.w700),),
+                SizedBox(
+                  height: Sizes.xs,
+                ),
                 Row(
-
                   children: [
-                    Icon(Iconsax.map),
-                    SizedBox(width: 2,),
-                    Text('Please slect your location',),
+                    Icon(Iconsax.location),
+                    SizedBox(
+                      width: 2,
+                    ),
+                    Text(
+                      'Please slect your location',
+                     style: TextStyle(color: Colors.red),
+                    ),
                   ],
                 ),
-
-
               ],
             ),
-            SizedBox(width: 250,),
-            Positioned(top:5,child: Icon(Iconsax.scan_barcode)),
+            SizedBox(
+              width: 200,
+            ),
+            Positioned(right: 50, child: Icon(Iconsax.scan_barcode)),
           ],
         ),
       ),

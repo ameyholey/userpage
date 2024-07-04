@@ -8,31 +8,38 @@ class card extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 20,
-      width: double.infinity,
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-              child: CircleAvatar(
-                  child: Image(image: AssetImage('assets/images/cms.png'),))),
-          SizedBox(
-            width: 50,
-          ),
-          SizedBox(
-            child: Column(
-              children: [
-                Text('91923456787'),
-                Text('jio postpaid'),
-                Text('bill amount \$ 1234'),
-              ],
+      
+      padding: EdgeInsets.all(10),
+      color: Colors.white54,
+      height: 100,
+      width: 300,
+      child: Padding(
+        padding: const EdgeInsets.all(10),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+                child: CircleAvatar(
+                    child: Image(image: AssetImage('assets/images/cms.png'),))),
+            SizedBox(
+              width: 10,
             ),
-          ),
-          ElevatedButton(
-            onPressed: () {},
-            child: Text('Pay'),
-          )
-        ],
+            Container(
+              child: Column(
+                children: [
+                  Text('91923456787'),
+                  Text('jio postpaid'),
+                  Text('bill amount \$ 1234'),
+                ],
+              ),
+            ),
+            ElevatedButton(
+             
+              onPressed: () {},
+              child: Text('Pay'),
+            )
+          ],
+        ),
       ),
     );
   }
