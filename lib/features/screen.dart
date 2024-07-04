@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:userpage/comman/row.dart';
 
 import '../comman/card.dart';
 import '../comman/sizes.dart';
@@ -28,7 +29,7 @@ class Screen extends StatelessWidget {
                     height: Sizes.md,
                   ),
                   SizedBox(
-                    height: 100,
+
                     child: Column(
                       children: [
                          Center(child:
@@ -50,6 +51,7 @@ class Screen extends StatelessWidget {
             //     ],
             //   ),
             // ),
+            Arow(),
           ],
         ),
       ),
