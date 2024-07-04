@@ -11,7 +11,7 @@ class Searchbar extends StatelessWidget {
       width: 450,
       child: TextField(
         decoration: InputDecoration(
-          label: ,
+
             prefixIcon: Icon(Iconsax.search_normal),
             suffixIcon: Icon(Iconsax.microphone),
             border: OutlineInputBorder(

@@ -18,7 +18,7 @@ class Appbar extends StatelessWidget {
           SizedBox(width: 200,),
           Circularimage(image: 'assets/images/cms.png'   ,),
           SizedBox(width:40,),
-          Icon(Icons.notifications),
+          Icon(Icons.menu),
           SizedBox(width:40,),
           Icon(Icons.notifications)
         ],
