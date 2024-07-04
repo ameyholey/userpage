@@ -10,29 +10,32 @@ class Usre extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 100,
-      child: Row(
-        children: [
-          Column(
-            children: [
-              Text('Hi Prashant'),
-              SizedBox(height: Sizes.xs,),
-              Row(
+    return Padding(
+      padding: const EdgeInsets.all(10),
+      child: SizedBox(
+        height: 100,
+        child: Row(
+          children: [
+            Column(
+              children: [
+                Text('Hi Prashant'),
+                SizedBox(height: Sizes.xs,),
+                Row(
 
-                children: [
-                  Icon(Iconsax.map),
-                  SizedBox(width: 2,),
-                  Text('Please slect your location',),
-                ],
-              ),
+                  children: [
+                    Icon(Iconsax.map),
+                    SizedBox(width: 2,),
+                    Text('Please slect your location',),
+                  ],
+                ),
 
 
-            ],
-          ),
-          SizedBox(width: 250,),
-          Icon(Iconsax.scan_barcode),
-        ],
+              ],
+            ),
+            SizedBox(width: 250,),
+            Positioned(top:5,child: Icon(Iconsax.scan_barcode)),
+          ],
+        ),
       ),
     );
   }

@@ -3,6 +3,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:userpage/comman/row.dart';
 
 import '../comman/card.dart';
+import '../comman/greencontainer.dart';
 import '../comman/sizes.dart';
 import '../comman/slider.dart';
 import '../containers/circularimage.dart';
@@ -20,37 +21,33 @@ class Screen extends StatelessWidget {
         child: Column(
           children: [
             Appbar(),
+            SizedBox(
+              height: Sizes.md,
+            ),
             Usre(),
             SizedBox(
-              child: Column(
+              height: Sizes.md,
+            ),
+            GreeenContainer(),
+            SizedBox(
+              height: Sizes.md,
+            ),
+            SizedBox(
+              height: 20,
+              child: Row(
                 children: [
-                  Text('Upcoming Bills'),
-                  SizedBox(
-                    height: Sizes.md,
-                  ),
-                  SizedBox(
-
-                    child: Column(
-                      children: [
-                         Center(child:
-                         card(),),
-                         Searchbar(),
-
-                      ],
-                    ),
-                  ),
-
+                  ElevatedButton(
+                      onPressed: () {}, child: Text('Recently Used')),
                 ],
               ),
             ),
-            // SizedBox(
-            //   height: 20,
-            //   child: Row(
-            //     children: [
-            //       ElevatedButton(onPressed: (){}, child: Text('Recently Used')),
-            //     ],
-            //   ),
-            // ),
+            SizedBox(
+              height: Sizes.md,
+            ),
+            Arow(),
+            SizedBox(
+              height: Sizes.md,
+            ),
             Arow(),
           ],
         ),
@@ -58,4 +55,3 @@ class Screen extends StatelessWidget {
     );
   }
 }
-

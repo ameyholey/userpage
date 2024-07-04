@@ -21,7 +21,8 @@ class Cardvertical extends StatelessWidget {
     return GestureDetector(
 onTap:  () => Get.to(()=> EmptyScreen()),
       child: Container(
-        width: 180,
+
+        width: 100,
         padding: const EdgeInsets.all(1),
         decoration: BoxDecoration(
 
@@ -30,13 +31,14 @@ onTap:  () => Get.to(()=> EmptyScreen()),
         child: Column(
           children: [
             RoundedContainer(
-              height: 180,
+              height: 100,
               padding: const EdgeInsets.all(
                 Sizes.sm,
               ),
               backgroundColor: dark ? AColors.dark : AColors.light,
               child:Image.asset("assets/images/cms.png")
             ),
+            Text('Traffic Fine'),
                    ]
               ),
             )
